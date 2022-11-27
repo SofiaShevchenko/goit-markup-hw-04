@@ -171,8 +171,6 @@ ul {
 }
 
 .envelope-item {
-    width: 16px;
-    height: 12px;
     margin-right: 10px;
     fill: currentColor;
   
@@ -180,8 +178,7 @@ ul {
 
 
 .icon-vector {
-    width: 16px;
-    height: 12px;
+    
     margin-right: 10px;
     fill: currentColor;
     
@@ -331,10 +328,6 @@ gap: 30px;
    
 }
 
-.team-soc-items:not(:last-child) {
-    margin-right: 10px;
-}
-
 
 .team {
     margin-bottom: 50px;
@@ -366,7 +359,8 @@ gap: 30px;
     
 }
 
-.team-soc-link:hover {
+.team-soc-link:hover,
+.team-soc-link:focus {
     background-color: #2196F3;
     color: #ffffff;
 }
@@ -406,7 +400,11 @@ gap: 30px;
     
 }
 
-.team-work li:not(:last-child) {
+.team-soc-items:not(:last-child) {
+    margin-right: 10px;
+}
+
+.teamcard:not(:last-child) {
     margin-right: 30px;
 }
 
@@ -477,7 +475,8 @@ gap: 30px;
         
 }
 
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
 border-color: #2196F3;
 color: #2196f3;
 }
@@ -495,7 +494,6 @@ color: #2196f3;
 
 .foot .logo-link{
     display: inline-block;
-    
     margin-bottom: 20px;
     
 }
@@ -519,9 +517,13 @@ color: #2196f3;
     
 }
 
+.foot-con {
+    display: flex;
+}
+
 .foot-add {
    
-    margin-right: 70px;
+    margin-left: 70px;
     
 }
 
@@ -535,10 +537,9 @@ color: #2196f3;
         text-transform: uppercase;
         color: #FFFFFF;
         display: flex;
-        justify-content: center;
-        align-items: center;
         margin-bottom: 20px;
-        margin-right: 75px;
+        
+        margin-top: 10px;
 }
 
 .foot-soc-items {
@@ -554,7 +555,8 @@ color: #2196f3;
         
     }
 
-.foot-soc-link:hover {
+.foot-soc-link:hover,
+ .foot-soc-link:focus {
     background-color: #2196F3;
     color: #ffffff;
 }
